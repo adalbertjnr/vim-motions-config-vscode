@@ -1,0 +1,121 @@
+{
+  "workbench.editor.focusRecentEditorAfterClose": false,
+  "editor.fontFamily": "'Fira Code Bold'",
+  "editor.fontWeight": "bold",
+  "editor.fontLigatures": false,
+  "terminal.integrated.fontSize": 17,
+  "editor.fontSize": 16,
+  "window.zoomLevel": 1,
+  "editor.fontVariations": true,
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.codeActionsOnSave": {},
+  "go.lintOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.vetFlags": ["-all", "-shadow"],
+  "go.toolsManagement.autoUpdate": true,
+  "gopls": {
+    "ui.semanticTokens": true
+  },
+  "editor.lineNumbers": "relative",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "keep",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "prettier.printWidth": 160,
+  "prettier.bracketSameLine": true,
+  "editor.formatOnSave": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "vim.easymotion": true,
+  "vim.leader": "<space>",
+  "vim.hlsearch": true,
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // NAVIGATION
+    // switch b/w buffers
+    { "before": ["<S-h>"], "commands": [":bprevious"] },
+    { "before": ["<S-l>"], "commands": [":bnext"] },
+
+    // splits w/ groups
+    { "before": ["leader", "v"], "commands": ["workbench.action.splitEditorToRightGroup"] },
+    { "before": ["leader", "s"], "commands": ["workbench.action.splitEditorToBelowGroup"] },
+
+    // move opened files to groups
+    { "before": ["leader", "m", "v"], "commands": ["workbench.action.moveEditorToRightGroup"] },
+    { "before": ["leader", "m", "s"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
+
+    // panes
+    {
+      "before": ["leader", "h"],
+      "commands": ["workbench.action.focusLeftGroup"]
+    },
+    {
+      "before": ["leader", "j"],
+      "commands": ["workbench.action.focusBelowGroup"]
+    },
+    {
+      "before": ["leader", "k"],
+      "commands": ["workbench.action.focusAboveGroup"]
+    },
+    {
+      "before": ["leader", "l"],
+      "commands": ["workbench.action.focusRightGroup"]
+    },
+    // NICE TO HAVE
+    { "before": ["leader", "w"], "commands": [":w!"] },
+    { "before": ["leader", "q"], "commands": [":q!"] },
+    { "before": ["leader", "x"], "commands": [":x!"] },
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
+    },
+    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.showDefinitionPreviewHover"]
+    },
+    {
+      "before": ["leader", "i"],
+      "commands": ["extension.toggleBool"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    // Stay in visual mode while indenting
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    // Move selected lines while staying in visual mode
+    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+    // toggle comment selection
+    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
+  ],
+  "breadcrumbs.enabled": false,
+  "window.commandCenter": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.colorTheme": "gruvboxConcoctis dark soft",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
+  "workbench.activityBar.location": "hidden",
+  "zenMode.centerLayout": false,
+  "zenMode.fullScreen": true,
+  "zenMode.hideStatusBar": false
+}
