@@ -117,5 +117,6 @@
   "workbench.activityBar.location": "hidden",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
-  "zenMode.hideStatusBar": false
+  "zenMode.hideStatusBar": false,
+  "zenMode.hideLineNumbers": false
 }
