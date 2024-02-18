@@ -1,5 +1,6 @@
 {
   "workbench.editor.focusRecentEditorAfterClose": false,
+  "editor.scrollBeyondLastLine": false,
   "editor.fontFamily": "'Fira Code Bold'",
   "editor.fontWeight": "bold",
   "editor.fontLigatures": false,
