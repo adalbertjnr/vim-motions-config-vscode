@@ -1,6 +1,27 @@
 // Place your key bindings in this file to override the defaults
 // Place your key bindings in this file to override the defaults
 [
+  //RESIZE 
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.increaseViewWidth",
+    "when": "editorFocus"   
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "editorFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "workbench.action.increaseViewHeight",
+    "when": "editorFocus"   
+  },
+  {
+    "key": "ctrl+down",
+    "command": "workbench.action.decreaseViewHeight",
+    "when": "editorFocus"
+  },
   // NAVIGATION
   {
     "key": "ctrl+n",
@@ -22,12 +43,18 @@
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+shift+a",
+    "key": "ctrl+v",
+    "command": "explorer.openToSide",
+    "args": { "group": 0 },
+    "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+n",
     "command": "workbench.action.terminal.focusNext",
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+b",
+    "key": "ctrl+shift+p",
     "command": "workbench.action.terminal.focusPrevious",
     "when": "terminalFocus"
   },
