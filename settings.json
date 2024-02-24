@@ -39,7 +39,7 @@
   },
   "prettier.printWidth": 160,
   "prettier.bracketSameLine": true,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "vim.easymotion": true,
   "vim.leader": "<space>",
@@ -55,9 +55,9 @@
     { "before": ["leader", "s"], "commands": ["workbench.action.splitEditorToBelowGroup"] },
 
     // move opened files to groups
-    { "before": ["leader", "m", "v"], "commands": ["workbench.action.moveEditorToRightGroup"] },
+    { "before": ["leader", "m", "r"], "commands": ["workbench.action.moveEditorToRightGroup"] },
     { "before": ["leader", "m", "s"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
-
+    { "before": ["leader", "m", "l"], "commands": ["workbench.action.moveEditorToLeftGroup"] },
     // panes
     {
       "before": ["leader", "h"],
@@ -97,7 +97,10 @@
     {
       "before": ["leader", "i"],
       "commands": ["extension.toggleBool"]
-    }
+    },
+    // Ident lines in normal mode
+    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
@@ -113,11 +116,12 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.colorTheme": "gruvboxConcoctis dark soft",
+  "workbench.colorTheme": "Dracula Soft",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "workbench.activityBar.location": "hidden",
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": true,
   "zenMode.hideStatusBar": false,
-  "zenMode.hideLineNumbers": false
+  "zenMode.hideLineNumbers": false,
+  "editor.stickyScroll.enabled": false,
+  "workbench.activityBar.location": "hidden"
 }
