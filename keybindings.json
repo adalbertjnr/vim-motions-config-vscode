@@ -28,22 +28,19 @@
     "command": "workbench.action.quickOpenSelectNext",
     "when": "inQuickOpen"
   },
-  { 
-    "key": "ctrl+n",
-    "command": "-workbench.action.files.newUntitledFile",
-  },
+
   {
     "key": "ctrl+p",
     "command": "workbench.action.quickOpenSelectPrevious",
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+r",
     "command": "workbench.action.alternativeAcceptSelectedQuickOpenItem",
     "when": "inQuickOpen"
   },
   {
-    "key": "ctrl+v",
+    "key": "ctrl+r",
     "command": "explorer.openToSide",
     "args": { "group": 0 },
     "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
@@ -111,5 +108,35 @@
   {
     "key": "ctrl+z",
     "command": "workbench.action.toggleZenMode"
+  },
+  //Disabled
+  { 
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile",
+  },
+  {
+    "key": "space",
+    "command": "-filesExplorer.openFilePreserveFocus",
+    "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsFolder && !inputFocus"
+  },
+  {
+    "key": "space",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus && !treestickyScrollFocused"
+  },
+  {
+    "key": "h",
+    "command": "-list.collapse",
+    "when": "listFocus && !inputFocus" 
+  },
+  {
+    "key": "l",
+    "command": "-list.select",
+    "when": "listFocus && !inputFocus" 
+  },
+  {
+    "key": "o",
+    "command": "-list.toggleExpand",
+    "when": "listFocus && !inputFocus" 
   },
 ]
