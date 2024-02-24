@@ -61,21 +61,20 @@
     // panes
     {
       "before": ["leader", "h"],
-      "commands": ["workbench.action.focusLeftGroup"]
+      "commands": ["workbench.action.navigateLeft"]
     },
     {
       "before": ["leader", "j"],
-      "commands": ["workbench.action.focusBelowGroup"]
+      "commands": ["workbench.action.navigateDown"]
     },
     {
       "before": ["leader", "k"],
-      "commands": ["workbench.action.focusAboveGroup"]
+      "commands": ["workbench.action.navigateUp"]
     },
     {
       "before": ["leader", "l"],
-      "commands": ["workbench.action.focusRightGroup"]
+      "commands": ["workbench.action.navigateRight"]
     },
-    // NICE TO HAVE
     { "before": ["leader", "w"], "commands": [":w!"] },
     { "before": ["leader", "q"], "commands": [":q!"] },
     { "before": ["leader", "x"], "commands": [":x!"] },
@@ -116,12 +115,11 @@
   "window.commandCenter": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.colorTheme": "Dracula Soft",
+  "workbench.colorTheme": "Everforest Dark",
   "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "zenMode.centerLayout": false,
-  "zenMode.fullScreen": true,
+  "editor.stickyScroll.enabled": false,
+  "workbench.activityBar.location": "hidden",
   "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
-  "editor.stickyScroll.enabled": false,
-  "workbench.activityBar.location": "hidden"
+  "zenMode.centerLayout": false
 }
