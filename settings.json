@@ -121,5 +121,6 @@
   "workbench.activityBar.location": "hidden",
   "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
-  "zenMode.centerLayout": false
+  "zenMode.centerLayout": false,
+  "editor.cursorStyle": "block"
 }
