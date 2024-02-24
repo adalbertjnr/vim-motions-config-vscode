@@ -1,7 +1,7 @@
 // Place your key bindings in this file to override the defaults
 // Place your key bindings in this file to override the defaults
 [
-  //RESIZE 
+  // Resize 
   {
     "key": "ctrl+right",
     "command": "workbench.action.increaseViewWidth",
@@ -22,7 +22,7 @@
     "command": "workbench.action.decreaseViewHeight",
     "when": "editorFocus"
   },
-  // NAVIGATION
+  // Navigation
   {
     "key": "ctrl+n",
     "command": "workbench.action.quickOpenSelectNext",
@@ -45,6 +45,12 @@
     "args": { "group": 0 },
     "when": "explorerViewletFocus && foldersViewVisible && !inputFocus"
   },
+  {
+    "key": "space l",
+    "command": "workbench.action.navigateRight",
+    "when": "filesExplorerFocus && foldersViewVisible && !inputFocus"
+  },
+  //Terminal
   {
     "key": "ctrl+shift+n",
     "command": "workbench.action.terminal.focusNext",
@@ -69,7 +75,7 @@
     "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
-  // FILE TREE
+  // File tree
   {
     "command": "workbench.action.toggleSidebarVisibility",
     "key": "ctrl+e"
@@ -100,7 +106,7 @@
     "when": "filesExplorerFocus && !inputFocus"
   },
 
-  // EXTRA
+  // Extra
   {
     "key": "ctrl+shift+5",
     "command": "editor.emmet.action.matchTag"
