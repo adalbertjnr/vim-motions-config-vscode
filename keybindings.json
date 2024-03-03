@@ -105,8 +105,7 @@
     "key": "d",
     "when": "filesExplorerFocus && !inputFocus"
   },
-
-  // Extra
+ // Go to definition
   {
     "key": "ctrl+shift+5",
     "command": "editor.emmet.action.matchTag"
