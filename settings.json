@@ -1,24 +1,24 @@
 {
   "editor.scrollBeyondLastLine": false,
-  "editor.fontFamily": "'Fira Code Bold'",
+  "editor.fontFamily": "'JetBrains Mono Medium'",
   "editor.fontWeight": "bold",
-  "editor.fontLigatures": false,
   "editor.fontVariations": true,
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.cursorStyle": "block",
   "editor.codeActionsOnSave": {},
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "extensions.ignoreRecommendations": true,
   "workbench.startupEditor": "none",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "workbench.colorTheme": "Everforest Dark",
   "workbench.activityBar.location": "hidden",
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
+  "workbench.iconTheme": "gruvbox-material-icon-theme",
   "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
   "zenMode.centerLayout": false,
@@ -34,6 +34,12 @@
     "ui.semanticTokens": true
   },
   "editor.lineNumbers": "relative",
+  "[templ]": {
+    "editor.defaultFormatter": "a-h.templ"
+  },
+  "tailwindCSS.includeLanguages": {
+    "templ": "html"
+  },
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -54,9 +60,11 @@
   "prettier.printWidth": 160,
   "prettier.bracketSameLine": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "vim.easymotion": true,
   "vim.leader": "<space>",
   "vim.hlsearch": true,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
   "vim.normalModeKeyBindingsNonRecursive": [
     // NAVIGATION
     // switch b/w buffers
@@ -112,7 +120,7 @@
     },
     // Ident lines in normal mode
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
+    { "before": [">"], "commands": ["editor.action.indentLines"] }
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
@@ -124,5 +132,4 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
   ],
-
 }
