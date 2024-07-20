@@ -16,8 +16,6 @@
   "workbench.startupEditor": "none",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.activityBar.location": "hidden",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#f5f5f5"
   },
@@ -27,8 +25,7 @@
   "zenMode.centerLayout": false,
   "terminal.integrated.fontSize": 17,
   "window.commandCenter": false,
-  "window.zoomLevel": 1,
-  "window.titleBarStyle": "custom",
+  "window.zoomLevel": 0.5,
   "breadcrumbs.enabled": false,
   "go.lintOnSave": "package",
   "go.vetOnSave": "package",
@@ -137,5 +134,9 @@
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
   ],
   "editor.inlineSuggest.suppressSuggestions": true,
-  "workbench.colorTheme": "Visual Studio Dark - C++"
+  "workbench.colorTheme": "Kanagawa Redefined",
+  "window.menuBarVisibility": "toggle",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.activityBar.location": "hidden",
 }
