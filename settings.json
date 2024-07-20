@@ -7,14 +7,12 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 17,
+  "editor.fontSize": 16,
   "editor.cursorStyle": "block",
   "editor.codeActionsOnSave": {},
   "editor.formatOnSave": false,
   "editor.semanticHighlighting.enabled": true,
-  "editor.inlineSuggest.suppressSuggestions": true,
   "extensions.ignoreRecommendations": true,
-  "workbench.colorTheme": "Kanagawa Redefined",
   "workbench.startupEditor": "none",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
@@ -30,6 +28,7 @@
   "terminal.integrated.fontSize": 17,
   "window.commandCenter": false,
   "window.zoomLevel": 1,
+  "window.titleBarStyle": "custom",
   "breadcrumbs.enabled": false,
   "go.lintOnSave": "package",
   "go.vetOnSave": "package",
@@ -137,4 +136,6 @@
     // toggle comment selection
     { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
   ],
+  "editor.inlineSuggest.suppressSuggestions": true,
+  "workbench.colorTheme": "Visual Studio Dark - C++"
 }
