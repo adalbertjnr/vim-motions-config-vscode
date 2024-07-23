@@ -1,141 +1,142 @@
 {
-  "editor.scrollBeyondLastLine": false,
-  "editor.fontFamily": "'Fira Code Medium'",
-  "editor.fontWeight": "normal",
-  "editor.fontLigatures": true,
-  "editor.fontVariations": true,
-  "editor.tabSize": 2,
-  "editor.minimap.enabled": false,
-  "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 16,
-  "editor.cursorStyle": "block",
-  "editor.codeActionsOnSave": {},
-  "editor.formatOnSave": false,
-  "editor.semanticHighlighting.enabled": true,
-  "extensions.ignoreRecommendations": true,
-  "workbench.startupEditor": "none",
-  "workbench.editor.focusRecentEditorAfterClose": false,
-  "workbench.layoutControl.enabled": false,
-  "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.activityBar.location": "hidden",
-  "workbench.colorCustomizations": {
-    "tab.activeBorder": "#f5f5f5"
-  },
-  "workbench.iconTheme": "gruvbox-material-icon-theme",
-  "zenMode.hideStatusBar": false,
-  "zenMode.hideLineNumbers": false,
-  "zenMode.centerLayout": false,
-  "terminal.integrated.fontSize": 17,
-  "window.commandCenter": false,
-  "window.zoomLevel": 1,
-  "window.titleBarStyle": "custom",
-  "breadcrumbs.enabled": false,
-  "go.lintOnSave": "package",
-  "go.vetOnSave": "package",
-  "go.vetFlags": ["-all", "-shadow"],
-  "go.toolsManagement.autoUpdate": true,
-  "gopls": {
-    "ui.semanticTokens": true
-  },
-  "editor.lineNumbers": "relative",
-  "[templ]": {
-    "editor.defaultFormatter": "a-h.templ"
-  },
-  "tailwindCSS.includeLanguages": {
-    "templ": "html"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[yaml]": {
-    "editor.insertSpaces": true,
+    "editor.scrollBeyondLastLine": false,
+    "editor.fontFamily": "'Fira Code Medium'",
+    "editor.fontWeight": "normal",
+    "editor.fontLigatures": true,
+    "editor.fontVariations": true,
     "editor.tabSize": 2,
-    "editor.autoIndent": "keep",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    }
-  },
-  "prettier.printWidth": 160,
-  "prettier.bracketSameLine": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "vim.leader": "<space>",
-  "vim.hlsearch": true,
-  "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
-  },
-  "vim.normalModeKeyBindingsNonRecursive": [
-    // NAVIGATION
-    // switch b/w buffers
-    { "before": ["<S-h>"], "commands": [":bprevious"] },
-    { "before": ["<S-l>"], "commands": [":bnext"] },
-
-    // splits w/ groups
-    { "before": ["leader", "v"], "commands": ["workbench.action.splitEditorToRightGroup"] },
-    { "before": ["leader", "s"], "commands": ["workbench.action.splitEditorToBelowGroup"] },
-
-    // move opened files to groups
-    { "before": ["leader", "m", "r"], "commands": ["workbench.action.moveEditorToRightGroup"] },
-    { "before": ["leader", "m", "s"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
-    { "before": ["leader", "m", "l"], "commands": ["workbench.action.moveEditorToLeftGroup"] },
-    // panes
-    {
-      "before": ["leader", "h"],
-      "commands": ["workbench.action.navigateLeft"]
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.fontSize": 16,
+    "editor.cursorStyle": "block",
+    "editor.codeActionsOnSave": {},
+    "editor.formatOnSave": false,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.inlineSuggest.suppressSuggestions": true,
+    "extensions.ignoreRecommendations": true,
+    "workbench.startupEditor": "none",
+    "workbench.editor.focusRecentEditorAfterClose": false,
+    "workbench.layoutControl.enabled": false,
+    "workbench.colorTheme": "Kanagawa Redefined",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.editorActionsLocation": "hidden",
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorCustomizations": {
+      "tab.activeBorder": "#f5f5f5"
     },
-    {
-      "before": ["leader", "j"],
-      "commands": ["workbench.action.navigateDown"]
+    "workbench.iconTheme": "gruvbox-material-icon-theme",
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.centerLayout": false,
+    "terminal.integrated.fontSize": 17,
+    "window.menuBarVisibility": "toggle",
+    "window.commandCenter": false,
+    "window.zoomLevel": 0.5,
+    "breadcrumbs.enabled": false,
+    "go.lintOnSave": "package",
+    "go.vetOnSave": "package",
+    "go.vetFlags": ["-all", "-shadow"],
+    "go.toolsManagement.autoUpdate": true,
+    "gopls": {
+      "ui.semanticTokens": true
     },
-    {
-      "before": ["leader", "k"],
-      "commands": ["workbench.action.navigateUp"]
+    "editor.lineNumbers": "relative",
+    "[templ]": {
+      "editor.defaultFormatter": "a-h.templ"
     },
-    {
-      "before": ["leader", "l"],
-      "commands": ["workbench.action.navigateRight"]
+    "tailwindCSS.includeLanguages": {
+      "templ": "html"
     },
-    { "before": ["leader", "w"], "commands": [":w!"] },
-    { "before": ["leader", "q"], "commands": [":q!"] },
-    { "before": ["leader", "x"], "commands": [":x!"] },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
+    "[json]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
-    { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
-    {
-      "before": ["g", "h"],
-      "commands": ["editor.action.showDefinitionPreviewHover"]
+    "[yaml]": {
+      "editor.insertSpaces": true,
+      "editor.tabSize": 2,
+      "editor.autoIndent": "keep",
+      "diffEditor.ignoreTrimWhitespace": false,
+      "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": true
+      }
     },
-    {
-      "before": ["leader", "i"],
-      "commands": ["extension.toggleBool"]
+    "prettier.printWidth": 160,
+    "prettier.bracketSameLine": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "vim.leader": "<space>",
+    "vim.hlsearch": true,
+    "extensions.experimental.affinity": {
+      "vscodevim.vim": 1
     },
-    // Ident lines in normal mode
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] }
-  ],
-  "vim.visualModeKeyBindings": [
-    // Stay in visual mode while indenting
-    { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] },
-    // Move selected lines while staying in visual mode
-    { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
-    { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
-    // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
-  ],
-  "editor.inlineSuggest.suppressSuggestions": true,
-  "workbench.colorTheme": "Visual Studio Dark - C++"
-}
+    "vim.normalModeKeyBindingsNonRecursive": [
+      // NAVIGATION
+      // switch b/w buffers
+      { "before": ["<S-h>"], "commands": [":bprevious"] },
+      { "before": ["<S-l>"], "commands": [":bnext"] },
+  
+      // splits w/ groups
+      { "before": ["leader", "v"], "commands": ["workbench.action.splitEditorToRightGroup"] },
+      { "before": ["leader", "s"], "commands": ["workbench.action.splitEditorToBelowGroup"] },
+  
+      // move opened files to groups
+      { "before": ["leader", "m", "r"], "commands": ["workbench.action.moveEditorToRightGroup"] },
+      { "before": ["leader", "m", "s"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
+      { "before": ["leader", "m", "l"], "commands": ["workbench.action.moveEditorToLeftGroup"] },
+      // panes
+      {
+        "before": ["leader", "h"],
+        "commands": ["workbench.action.navigateLeft"]
+      },
+      {
+        "before": ["leader", "j"],
+        "commands": ["workbench.action.navigateDown"]
+      },
+      {
+        "before": ["leader", "k"],
+        "commands": ["workbench.action.navigateUp"]
+      },
+      {
+        "before": ["leader", "l"],
+        "commands": ["workbench.action.navigateRight"]
+      },
+      { "before": ["leader", "w"], "commands": [":w!"] },
+      { "before": ["leader", "q"], "commands": [":q!"] },
+      { "before": ["leader", "x"], "commands": [":x!"] },
+      {
+        "before": ["[", "d"],
+        "commands": ["editor.action.marker.prev"]
+      },
+      {
+        "before": ["]", "d"],
+        "commands": ["editor.action.marker.next"]
+      },
+      { "before": ["leader", "f"], "commands": ["workbench.action.quickOpen"] },
+      { "before": ["leader", "p"], "commands": ["editor.action.formatDocument"] },
+      { "before": ["leader", "c"], "commands": ["editor.action.commentLine"] },
+      {
+        "before": ["g", "h"],
+        "commands": ["editor.action.showDefinitionPreviewHover"]
+      },
+      {
+        "before": ["leader", "i"],
+        "commands": ["extension.toggleBool"]
+      },
+      // Ident lines in normal mode
+      { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+      { "before": [">"], "commands": ["editor.action.indentLines"] }
+    ],
+    "vim.visualModeKeyBindings": [
+      // Stay in visual mode while indenting
+      { "before": ["<"], "commands": ["editor.action.outdentLines"] },
+      { "before": [">"], "commands": ["editor.action.indentLines"] },
+      // Move selected lines while staying in visual mode
+      { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
+      { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
+      // toggle comment selection
+      { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
+    ]
+  }
