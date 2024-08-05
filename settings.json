@@ -33,6 +33,7 @@
     "window.commandCenter": false,
     "window.zoomLevel": 0.5,
     "breadcrumbs.enabled": false,
+    "git.openRepositoryInParentFolders": "always",
     "go.lintOnSave": "package",
     "go.vetOnSave": "package",
     "go.vetFlags": ["-all", "-shadow"],
@@ -69,6 +70,9 @@
     "javascript.updateImportsOnFileMove.enabled": "always",
     "vim.leader": "<space>",
     "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+    "vim.highlightedyank.duration": 50,
     "extensions.experimental.affinity": {
       "vscodevim.vim": 1
     },
