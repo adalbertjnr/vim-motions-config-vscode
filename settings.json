@@ -7,7 +7,7 @@
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 16,
+  "editor.fontSize": 15,
   "editor.cursorStyle": "block",
   "editor.codeActionsOnSave": {},
   "editor.formatOnSave": true,
@@ -20,6 +20,7 @@
   "workbench.editor.enablePreview": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.activityBar.location": "hidden",
+  "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#f5f5f5"
   },
@@ -38,7 +39,7 @@
   "go.vetFlags": ["-all", "-shadow"],
   "go.toolsManagement.autoUpdate": true,
   "gopls": {
-    "ui.semanticTokens": true
+    "ui.semanticTokens": false
   },
   "editor.lineNumbers": "relative",
   "[templ]": {
@@ -46,9 +47,6 @@
   },
   "tailwindCSS.includeLanguages": {
     "templ": "html"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -65,6 +63,10 @@
       "strings": true
     }
   },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
@@ -77,9 +79,18 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  "prettier.printWidth": 160,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "prettier.printWidth": 80,
   "prettier.bracketSameLine": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.leader": "<space>",
   "vim.hlsearch": true,
   "vim.highlightedyank.enable": true,
@@ -96,13 +107,28 @@
     { "before": ["<S-l>"], "commands": [":bnext"] },
 
     // splits w/ groups
-    { "before": ["leader", "v"], "commands": ["workbench.action.splitEditorToRightGroup"] },
-    { "before": ["leader", "s"], "commands": ["workbench.action.splitEditorToBelowGroup"] },
+    {
+      "before": ["leader", "v"],
+      "commands": ["workbench.action.splitEditorToRightGroup"]
+    },
+    {
+      "before": ["leader", "s"],
+      "commands": ["workbench.action.splitEditorToBelowGroup"]
+    },
 
     // move opened files to groups
-    { "before": ["leader", "m", "r"], "commands": ["workbench.action.moveEditorToRightGroup"] },
-    { "before": ["leader", "m", "s"], "commands": ["workbench.action.moveEditorToBelowGroup"] },
-    { "before": ["leader", "m", "l"], "commands": ["workbench.action.moveEditorToLeftGroup"] },
+    {
+      "before": ["leader", "m", "r"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
+    },
+    {
+      "before": ["leader", "m", "s"],
+      "commands": ["workbench.action.moveEditorToBelowGroup"]
+    },
+    {
+      "before": ["leader", "m", "l"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
+    },
     // panes
     {
       "before": ["leader", "h"],
@@ -154,7 +180,10 @@
     { "before": ["J"], "commands": ["editor.action.moveLinesDownAction"] },
     { "before": ["K"], "commands": ["editor.action.moveLinesUpAction"] },
     // toggle comment selection
-    { "before": ["leader", "c"], "commands": ["editor.action.commentLine"], "when": "editorTextFocus && !editorReadonly" }
+    {
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"],
+      "when": "editorTextFocus && !editorReadonly"
+    }
   ],
-  "workbench.colorTheme": "Dark+ (Visual Studio)"
 }
