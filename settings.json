@@ -1,25 +1,32 @@
 {
   "editor.scrollBeyondLastLine": false,
   "editor.fontFamily": "'Fira Code Medium'",
+  // "editor.fontFamily": "'JetBrains Mono SemiBold'",
   "editor.fontWeight": "normal",
-  "editor.fontLigatures": true,
+  "editor.fontLigatures": false,
   "editor.fontVariations": true,
   "editor.tabSize": 2,
   "editor.minimap.enabled": false,
   "editor.stickyScroll.enabled": false,
-  "editor.fontSize": 15,
+  "editor.fontSize": 14,
   "editor.cursorStyle": "block",
   "editor.codeActionsOnSave": {},
   "editor.formatOnSave": true,
   "editor.semanticHighlighting.enabled": true,
   "editor.inlineSuggest.suppressSuggestions": true,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false,
+  "breadcrumbs.enabled": false,
+  "chat.commandCenter.enabled": false,
   "extensions.ignoreRecommendations": true,
+  "window.menuBarVisibility": "toggle",
+  "window.titleBarStyle": "custom",
+  "workbench.activityBar.location": "hidden",
   "workbench.startupEditor": "none",
   "workbench.editor.focusRecentEditorAfterClose": false,
   "workbench.layoutControl.enabled": false,
   "workbench.editor.enablePreview": false,
   "workbench.editor.editorActionsLocation": "hidden",
-  "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "Visual Studio 2017 Dark - C++",
   "workbench.colorCustomizations": {
     "tab.activeBorder": "#f5f5f5"
@@ -29,17 +36,22 @@
   "zenMode.hideLineNumbers": false,
   "zenMode.centerLayout": false,
   "terminal.integrated.fontSize": 17,
-  "window.menuBarVisibility": "toggle",
   "window.commandCenter": false,
   "window.zoomLevel": 0.5,
-  "breadcrumbs.enabled": false,
   "git.openRepositoryInParentFolders": "always",
   "go.lintOnSave": "package",
   "go.vetOnSave": "package",
   "go.vetFlags": ["-all", "-shadow"],
   "go.toolsManagement.autoUpdate": true,
   "gopls": {
-    "ui.semanticTokens": false
+    "ui.semanticTokens": true
+  },
+  "go.addTags": {
+    "tags": "json",
+    "options": "json=omitempty",
+    "promptForTags": false,
+    "transform": "camelcase",
+    "template": ""
   },
   "editor.lineNumbers": "relative",
   "[templ]": {
@@ -115,7 +127,6 @@
       "before": ["leader", "s"],
       "commands": ["workbench.action.splitEditorToBelowGroup"]
     },
-
     // move opened files to groups
     {
       "before": ["leader", "m", "r"],
@@ -170,7 +181,10 @@
     },
     // Ident lines in normal mode
     { "before": ["<"], "commands": ["editor.action.outdentLines"] },
-    { "before": [">"], "commands": ["editor.action.indentLines"] }
+    { "before": [">"], "commands": ["editor.action.indentLines"] },
+
+    // Toggle Status Bar
+    {"before": ["leader", "b"], "commands": ["workbench.action.toggleStatusbarVisibility"]},
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
