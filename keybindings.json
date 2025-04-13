@@ -5,6 +5,16 @@
   {
     "key": "ctrl+right",
     "command": "workbench.action.increaseViewWidth",
+    "when": "filesExplorerFocus"   
+  },
+  {
+    "key": "ctrl+left",
+    "command": "workbench.action.decreaseViewWidth",
+    "when": "filesExplorerFocus"   
+  },
+  {
+    "key": "ctrl+right",
+    "command": "workbench.action.increaseViewWidth",
     "when": "editorFocus"   
   },
   {
